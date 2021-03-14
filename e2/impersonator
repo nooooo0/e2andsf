@@ -1,0 +1,20 @@
+@name 
+@persist Teamnumber
+#[
+  how to use this
+  when the chip first runs it prints team numbers and using them we can make printGlobal what we say as their rank 
+  the server i made this on had custom chat tags so you may have to do some editing to printGlobal to make it look like the server you're on
+  requires VExtensions at https://github.com/Vurv78/VExtensions
+#]
+
+
+if(first()) {
+  print(teams())
+  print(teamName(21))
+}
+runOnChat(1)
+if(chatClk(owner())) {
+    hideChat(1)
+    Teamnumber = 21
+    printGlobal(vec(0),"[",teamColor(Teamnumber),teamName(Teamnumber),vec(0),"] ",teamColor(Teamnumber),owner():name(),vec(255),": ",lastSaid())
+}
