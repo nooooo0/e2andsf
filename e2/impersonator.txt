@@ -5,7 +5,7 @@
   when the chip first runs it prints team numbers and using them we can make printGlobal what we say as their rank 
   the server i made this on had custom chat tags so you may have to do some editing to printGlobal to make it look like the server you're on
   requires VExtensions at https://github.com/Vurv78/VExtensions
-#]
+]#
 
 
 if(first()) {
